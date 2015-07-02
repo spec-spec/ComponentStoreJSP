@@ -1,4 +1,4 @@
-package org.oa.tp.data;
+package org.oa.taras.store.data;
 
 import com.google.gson.annotations.SerializedName;
 

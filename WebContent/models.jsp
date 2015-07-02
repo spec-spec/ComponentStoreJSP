@@ -1,5 +1,5 @@
-<%@page import="org.oa.tp.dao.DaoFacade" %>
-<%@page import="org.oa.tp.data.Model" %>
+<%@page import="org.oa.taras.store.dao.DaoFacade" %>
+<%@page import="org.oa.taras.store.data.Model" %>
 <%@page import="java.util.List" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
@@ -39,6 +39,7 @@
             <%= model.getDescription()%>
         </td>
         <td>
+            
             <a href="edit_model.jsp?id=<%= model.getId()%>">UPDATE</a>
         </td>
         <td>
@@ -53,6 +54,8 @@
 </table>
 <br/>
 <a href="edit_model.jsp"> CREATE </a>
+<br/>
+<a href="elements.jsp"> Elements </a>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-package org.oa.tp.dao;
+package org.oa.taras.store.dao;
 
 import java.util.Collection;
 import java.util.List;

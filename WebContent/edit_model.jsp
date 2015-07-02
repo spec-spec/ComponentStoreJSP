@@ -1,5 +1,5 @@
-<%@page import="org.oa.tp.dao.DaoFacade" %>
-<%@page import="org.oa.tp.data.Model" %>
+<%@page import="org.oa.taras.store.dao.DaoFacade" %>
+<%@page import="org.oa.taras.store.data.Model" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>

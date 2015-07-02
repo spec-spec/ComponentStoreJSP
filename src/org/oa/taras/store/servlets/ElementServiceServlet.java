@@ -3,16 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.oa.tp.servlets;
+package org.oa.taras.store.servlets;
 
 import com.google.gson.Gson;
-import org.oa.tp.dao.DaoFacade;
-import org.oa.tp.data.Element;
+
+import org.oa.taras.store.dao.DaoFacade;
+import org.oa.taras.store.data.Element;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
@@ -60,7 +62,7 @@ public class ElementServiceServlet extends HttpServlet {
                     out.print("{\"response\":\"Deleted\"}");
                 } else {
                     response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-                    out.print("{\"error\":\"Failed delete album\"}");
+                    out.print("{\"error\":\"Failed delete element\"}");
                 }
             }
         } else {
@@ -96,7 +98,7 @@ public class ElementServiceServlet extends HttpServlet {
                     out.print("{\"response\":\"Created\"}");
                 } else {
                     response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-                    out.print("{\"error\":\"Failed create album\"}");
+                    out.print("{\"error\":\"Failed create element\"}");
                 }
             }
         } else if (UPDATE_METHOD.equalsIgnoreCase(queryMethod)) {
@@ -116,7 +118,7 @@ public class ElementServiceServlet extends HttpServlet {
                     out.print("{\"response\":\"Updated\"}");
                 } else {
                     response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-                    out.print("{\"error\":\"Failed update album\"}");
+                    out.print("{\"error\":\"Failed update element\"}");
                 }
             }
         } else if (DELETE_METHOD.equalsIgnoreCase(queryMethod)) {
@@ -129,7 +131,7 @@ public class ElementServiceServlet extends HttpServlet {
                     out.print("{\"response\":\"Deleted by post\"}");
                 } else {
                     response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-                    out.print("{\"error\":\"Failed delete album\"}");
+                    out.print("{\"error\":\"Failed delete element\"}");
                 }
             }
         } else {

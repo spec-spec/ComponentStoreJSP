@@ -1,4 +1,4 @@
-package org.oa.tp.servlets;
+package org.oa.taras.store.servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.oa.tp.dao.DaoFacade;
-import org.oa.tp.data.Model;
+import org.oa.taras.store.dao.DaoFacade;
+import org.oa.taras.store.data.Model;
 
 /**
  * Servlet implementation class ModelServiceServletPost
@@ -84,7 +84,7 @@ public class ModelServiceServletPost extends HttpServlet {
                     out.print("{\"response\":\"Updated\"}");
                 } else {
                     response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-                    out.print("{\"error\":\"Failed update album\"}");
+                    out.print("{\"error\":\"Failed update model\"}");
                 }
             }
         } else if (DELETE_METHOD.equalsIgnoreCase(queryMethod)) {
@@ -97,7 +97,7 @@ public class ModelServiceServletPost extends HttpServlet {
                     out.print("{\"response\":\"Deleted by post\"}");
                 } else {
                     response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-                    out.print("{\"error\":\"Failed delete album\"}");
+                    out.print("{\"error\":\"Failed delete model\"}");
                 }
             }
         } else {

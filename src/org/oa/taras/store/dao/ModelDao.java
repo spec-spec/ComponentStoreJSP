@@ -1,4 +1,4 @@
-package org.oa.tp.dao;
+package org.oa.taras.store.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import org.oa.tp.data.Element;
-import org.oa.tp.data.Model;
+import org.oa.taras.store.data.Element;
+import org.oa.taras.store.data.Model;
 
 class ModelDao implements AbstractDao<Model> {
 

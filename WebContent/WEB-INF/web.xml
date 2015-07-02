@@ -2,11 +2,11 @@
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
         <servlet-name>ElementServiceServlet</servlet-name>
-        <servlet-class>org.oa.tp.servlets.ElementServiceServlet</servlet-class>
+        <servlet-class>org.oa.taras.store.servlets.ElementServiceServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>ModelServiceServletPost</servlet-name>
-        <servlet-class>org.oa.tp.servlets.ModelServiceServletPost</servlet-class>
+        <servlet-class>org.oa.taras.store.servlets.ModelServiceServletPost</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ElementServiceServlet</servlet-name>
